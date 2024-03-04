@@ -219,6 +219,17 @@ Paste this into Query Map input and instead of <https://slovník.gov.cz/veřejn�
 ```
 { FOCUS rdf:type _}@<https://myexample.com/aec2db2a67ade8d68945158048f1088apersonShExShape>
 ```
+If you wish to validate data this way, you have to delete the http:// at the start of the data subject node. If you do not, the validator is confused and worngly focuses the data node resulting in throwing error about non-conformance. 
+So if you wish to use the edited Query map from Dataspecer, your data will look like this:
+```
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<jizagfbcfOyakrBRpfweozbqrYL.emYg7MdIXJBY5QJpBc2THkFJlLxTb.?g&awc=x&knuzjv=4la&> <https://slovník.gov.cz/veřejný-sektor/pojem/křestní-jméno> true ;
+	<https://slovník.gov.cz/veřejný-sektor/pojem/příjmení> "Hcmfl"^^xsd:anyURI ;
+	<https://slovník.gov.cz/veřejný-sektor/pojem/právo> -7587224 ;
+	a <https://slovník.gov.cz/veřejný-sektor/pojem/fyzická-osoba> .
+```
 
 Now after clicking the validation button, we see, the data is conformant:
 ![Dataspecer Person data specification](./packages/shacl/src/images/PersonValidationOK_Shex.png)
