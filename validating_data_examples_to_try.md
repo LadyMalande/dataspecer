@@ -10,7 +10,7 @@ The example data structure is this Person data structure, that has been renamed 
 
 Data structure: https://tool.dataspecer.com/editor?data-specification=https%3A%2F%2Fofn.gov.cz%2Fdata-specification%2F1ef6ae8e-53f5-4ed0-9021-e122fed28be7&data-psm-schema=https%3A%2F%2Fofn.gov.cz%2Fschema%2F1707267359524-5100-047c-992c
 
-![Dataspecer Person data specification](./packages/shacl/src/images/dataspecerPersonSpecification.png)
+![Dataspecer Person data specification](./packages/shacl/src/images/PersonDataStructure.png)
 
 Generated SHACL schema:
 ```
